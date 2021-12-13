@@ -11,7 +11,7 @@ require_once "../config/conexion.php"; //Contiene funcion que conecta a la base 
 
 function recoge1($var) {
     $tmp = (isset($_REQUEST[$var])) ? trim(strip_tags($_REQUEST[$var])) : '';
-    if (function_exists("get_magic_quotes_gpc") && get_magic_quotes_gpc()) {
+    if(function_exists("get_magic_quotes_gpc") /*&&  get_magic_quotes_gpc()*/) {
         $tmp = stripslashes($tmp);
     }
     $tmp = str_replace('&', '&amp;',  $tmp);
