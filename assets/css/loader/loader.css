@@ -1,0 +1,41 @@
+/* **************************************************************************
+Autor: RiLaRos
+Web: www.rilaros.com
+Mail: info@rilaros.com
+************************************************************************** */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#container-loader {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+  top: -10px;
+}
+#container-loader img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#container-loader p {
+  position: absolute;
+  top: 51.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[data-theme='dark'] #container-loader {
+  background-color: #2f2e44 !important;
+}

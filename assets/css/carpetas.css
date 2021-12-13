@@ -1,0 +1,108 @@
+.css-treeview-detail ul,
+.css-treeview-detail li
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ 
+.css-treeview-detail input
+{
+    /*position: absolute;
+    opacity: 0;*/
+}
+ 
+.css-treeview-detail
+{
+    user-select: none;
+}
+ 
+.css-treeview-detail a
+{
+    color: #35d;
+    text-decoration: none;
+}
+ 
+.css-treeview-detail a:hover
+{
+    text-decoration: underline;
+}
+ 
+.css-treeview-detail input + label + ul
+{
+    margin: 0 0 0 22px;
+}
+ 
+
+ 
+.css-treeview-detail label,
+.css-treeview-detail label::before
+{
+    cursor: pointer;
+}
+ 
+.css-treeview-detail input:disabled + label
+{
+    cursor: default;
+    opacity: .6;
+}
+ 
+.css-treeview-detail input:checked:not(:disabled) ~ ul
+{
+    display: block;
+}
+ 
+.css-treeview-detail label,
+.css-treeview-detail label::before
+{
+    background: url("http://experiments.wemakesites.net//pages/css3-treeview/example/icons.png") no-repeat;
+}
+ 
+.css-treeview-detail label,
+.css-treeview-detail a,
+.css-treeview-detail label::before
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+ 
+.css-treeview-detail label
+{
+    background-position: 18px 0;
+}
+ 
+.css-treeview-detail label::before
+{
+    content: "";
+    width: 16px;
+    margin: 0 22px 0 0;
+    vertical-align: middle;
+    background-position: 0 -32px;
+}
+ 
+.css-treeview-detail input:checked + label::before
+{
+    background-position: 0 -16px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .css-treeview-detail 
+    {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+    }
+ 
+    @-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+    {
+        from 
+        { 
+            padding: 0;
+        } 
+        to 
+        { 
+            padding: 0;
+        }
+    }
+}

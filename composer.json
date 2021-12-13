@@ -1,0 +1,12 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.3.31"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "php": "^7.3.0",
+        "ext-gd": "*"
+    }
+}
