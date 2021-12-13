@@ -577,6 +577,7 @@ function poner_inventario()
     global $con;
     $lowStockSql   = "SELECT * FROM productos WHERE stock_producto <= 3 AND estado_producto = 1";
     $lowStockQuery = $con->query($lowStockSql);
+    $countLowStock=$lowStockQuery->num_rows;
 
     echo '' . $countLowStock . '';
 }
